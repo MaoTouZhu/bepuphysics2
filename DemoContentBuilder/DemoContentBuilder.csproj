@@ -29,7 +29,7 @@
   </ItemGroup>
 
   <Target Condition="'$(OS)' == 'Unix'" Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="ln -sf /usr/lib/libfreetype.so.6 $(TargetDir)/freetype6.so" />
+    <Exec Command="ln -sf /usr/lib/x86_64-linux-gnu/libfreetype.so.6 $(TargetDir)/freetype6.so" />
   </Target>
 
 </Project>
